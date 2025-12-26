@@ -1,0 +1,71 @@
+.flexBox {
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px 10px;
+    margin: 5vw;
+}
+
+.headFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.input {
+    padding: 10px 20px;
+    border: 1px dashed var(--green);
+    border-radius: 10px;
+    transition: .3s;
+    width: 40%;
+    font-size: 1rem;
+}
+
+.input:focus {
+    box-shadow:  0px 0px 20px 4px var(--green);
+    outline: none;
+}
+
+.add, .clear{
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+    width: 50px;
+}
+
+.add:hover, .clear:hover {
+    box-shadow: 0px 0px 20px 0px var(--darkgrey);
+}
+
+.add {
+    background-color: var(--green);
+    font-size: 1.2rem;
+}
+
+.clear {
+    background-color: var(--brown);
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.removable {
+    position: relative;
+}
+
+.removeButton {
+    position: absolute;
+    top: -20%;
+    right: 0;
+    background-color: var(--warning);
+    padding: 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    transform: skewX(-10deg);
+}

@@ -1,0 +1,31 @@
+.mother {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black : rgb(0, 0, 0);
+    --white :rgb(255, 255, 255);
+    --navy :rgb(13, 59, 158);
+    --green :rgb(19, 192, 19);
+    --grey :rgb(228, 228, 228);
+    --darkgrey :rgb(128, 128, 128);
+    --warning :rgb(255, 127, 88);
+    --brown :rgb(134, 85, 57);
+    --pinkish :rgb(191, 162, 218);
+}
+
+.option {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: var(--grey);
+    color: var(--black);
+    transition: .25s;
+    border-radius: 25px;
+}
+
+.option:hover {
+    background-color: var(--pinkish);
+}  

@@ -1,0 +1,33 @@
+.randombot {
+    border-radius: 50px;
+    background-color: var(--green);
+    padding: 20px 40px;
+    border: 5px solid rgb(118, 180, 142);
+    outline: 1px solid var(--black);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 4px rgb(91, 91, 91);
+    transition: .25s;
+}
+
+.randombot:active {
+    transform: scale(.95);
+    box-shadow: none;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    margin: 5vw;
+}
+
+.lactive {
+    background-color: var(--navy);
+    color: var(--white);
+    font-size: 2em;
+}    
+
+  
+

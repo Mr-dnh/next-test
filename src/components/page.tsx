@@ -67,11 +67,12 @@ export default function TasksCreator({ source }: Props) {
         setTasks([]);
     };
     
-    
+
     const removeItem = (id: string)=> {
         setTasks(prev => prev.filter(task => task.id !== id));
     }
 
+    const dondon = (messages: string) => console.log(messages);
 
     return (
         <div>
@@ -91,7 +92,7 @@ export default function TasksCreator({ source }: Props) {
 
                 <button  className={style.add} onClick={addTasks}> ➕ </button>
 
-                <button className={style.clear} onClick={clearTasks}> ♻ </button>
+                <button className={style.clear} onClick={()=> {clearTasks;  dondon(input)} }> ♻ </button>
             </div>
 
             <div className={style.flexBox}>

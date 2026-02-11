@@ -52,7 +52,6 @@ export default function TasksCreator({ source }: Props) {
     
 
     const addTasks = () => {
-        console.log(tasks);
         const value = input.trim();
         if (!value) return;
         setTasks(prev => [...prev, {
@@ -60,7 +59,6 @@ export default function TasksCreator({ source }: Props) {
             title: value
         }]);
         setInput('')
-        
     };
 
     const clearTasks = ()=> {
@@ -72,11 +70,8 @@ export default function TasksCreator({ source }: Props) {
         setTasks(prev => prev.filter(task => task.id !== id));
     }
 
-    const dondon = (messages: string) => console.log(messages);
-
     return (
         <div>
-
             <div className={style.headFlex}>
                 <input className={style.input}
                 type="text"
@@ -90,9 +85,9 @@ export default function TasksCreator({ source }: Props) {
                 placeholder='Add a Task!'
                 />
 
-                <button  className={style.add} onClick={addTasks}> ➕ </button>
+                <button className={style.add} onClick={addTasks}> ➕ </button>
 
-                <button className={style.clear} onClick={()=> {clearTasks;  dondon(input)} }> ♻ </button>
+                <button className={style.clear} onClick={clearTasks}> ♻ </button>
             </div>
 
             <div className={style.flexBox}>
